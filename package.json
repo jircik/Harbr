@@ -1,0 +1,29 @@
+{
+  "name": "harbr",
+  "version": "0.1.0",
+  "description": "Local port dashboard — inspect and kill active ports",
+  "main": "dist/cli.js",
+  "bin": {
+    "harbr": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["ports", "cli", "devtools", "kill-port", "harbr"],
+  "license": "MIT",
+  "files": ["dist"],
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "express": "^4.18.0",
+    "open": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}

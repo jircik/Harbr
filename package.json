@@ -1,10 +1,13 @@
 {
-  "name": "harbr",
+  "name": "@jircik/harbr",
   "version": "0.1.0",
   "description": "Local port dashboard — inspect and kill active ports",
   "main": "dist/cli.js",
   "bin": {
     "harbr": "dist/cli.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "build": "tsc && chmod +x dist/cli.js",
